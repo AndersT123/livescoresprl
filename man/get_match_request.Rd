@@ -4,12 +4,12 @@
 \alias{get_match_request}
 \title{Get request for given match day}
 \usage{
-get_match_request(key, matchday)
+get_match_request(matchday, key)
 }
 \arguments{
-\item{key}{a string with your rapid api key}
-
 \item{matchday}{a string with the mathday "1"-"38"}
+
+\item{key}{a string with your rapid api key}
 }
 \value{
 a httr::GET() response.

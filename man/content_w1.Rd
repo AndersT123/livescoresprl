@@ -4,16 +4,11 @@
 \name{content_w1}
 \alias{content_w1}
 \title{Content of matchday 1}
-\format{
-A nested list
+\format{A nested list
 \describe{
 \item{matches}{List of game details each with length 7}
 ...
-}
-}
-\source{
-\url{https://rapidapi.com/heisenbug/api/Premier\%20League\%20Live\%20Scores}
-}
+}}
 \usage{
 content_w1
 }

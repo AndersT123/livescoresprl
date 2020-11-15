@@ -4,9 +4,7 @@
 \name{content_w25}
 \alias{content_w25}
 \title{Content of matchday 25}
-\format{
-An object of class \code{list} of length 1.
-}
+\format{An object of class \code{list} of length 1.}
 \usage{
 content_w25
 }
