@@ -4,7 +4,7 @@
 #' @param matchday a string with the mathday "1"-"38"
 #' @return a httr::GET() response.
 #' @export
-get_match_request <- function(key, matchday) {
+get_match_request <- function(matchday, key) {
   stopifnot(is.character(matchday), length(matchday) == 1)
   url = "https://heisenbug-premier-league-live-scores-v1.p.rapidapi.com/api/premierleague"
   headers = c('x-rapidapi-host' = "heisenbug-premier-league-live-scores-v1.p.rapidapi.com",
