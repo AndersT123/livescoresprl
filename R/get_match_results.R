@@ -38,22 +38,32 @@ get_home_teams <- function(content) {
   get_team_attr(content, "team1", "teamName") %>%
     purrr::flatten_chr()
 }
+
+#' @export
 get_away_teams <- function(content) {
   get_team_attr(content, "team2", "teamName") %>%
     purrr::flatten_chr()
 }
+
+#' @export
 get_home_scores <- function(content) {
   get_team_attr(content, "team1", "teamScore") %>%
     purrr::flatten_int()
 }
+
+#' @export
 get_away_scores <- function(content) {
   get_team_attr(content, "team1", "teamScore") %>%
     purrr::flatten_int()
 }
+
+#' @export
 get_match_timestatus <- function(content) {
   get_match_attr(content, "time") %>%
     purrr::flatten_chr()
 }
+
+#' @export
 get_match_kickoff <- function(content, as_datetime = FALSE) {
   out <- get_match_attr(content, "when") %>%
     purrr::flatten_chr()
